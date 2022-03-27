@@ -1,0 +1,359 @@
+:root {
+    --primary-cyan: #5FB4A2;
+    --primary-dark-blue: #203A4C;
+    --primary-grayish-dark-blue: #33323D;
+
+    --secondary-vry-light-grey: #FAFAFA;
+    --secondary-light-grey: #EAEAEB;
+    --secondary-bright-red: #F43030;
+}
+
+body {
+    --background-body: '#FAFAFA';
+    font-family: 'Public Sans', sans-serif;
+    min-height: 100vh;
+    background-color: var(--background-body);
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+h1 {
+    font-size: clamp(4rem, 3.1805rem + 2.9268vw, 6.4rem);
+    line-height: 6rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: clamp(3rem, 2.1805rem + 2.9268vw, 5.4rem);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: clamp(2.8rem, 2.3902rem + 1.4634vw, 4rem);
+}
+
+h2 + p {
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.grid-me-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+}
+
+.section-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+header .container  {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+
+.button {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.4rem 2rem;
+    background-color: var(--primary-dark-blue);
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.secondary-button {
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+    width: fit-content;
+    min-width: 19rem; /* Pour le flex dans le dernier bloc, le bouton est sur deux lignes sinon */
+}
+
+.header-nav {
+    top: 100%;
+    position: absolute;
+    right: 1rem;
+    text-transform: uppercase;
+    overflow: hidden;
+    transform: scaleY(0) translate(200%, 100%);;
+    transition: .3s;
+}
+
+.header-nav-visible{
+    transform: scaleY(1) translate(0%, 0%);
+}
+
+.container ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-grayish-dark-blue);
+    gap: 2rem;
+    min-width: 28rem;
+}
+
+main {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+header .container ul {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer .container ul {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.container ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+}
+
+.burger-menu::before {
+    content: '';
+    height: 0.5rem;
+    width: 3rem;
+    background-color: orangered;
+    position: absolute;
+    bottom: calc(100% + 0.3rem);
+    border-radius: 5px;
+    left: 0;
+}
+
+.burger-menu{
+    height: 0.5rem;
+    width: 3rem;
+    background-color: orangered;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.burger-menu::after {
+    content: '';
+    height: 0.5rem;
+    width: 3rem;
+    background-color: orangered;
+    position: absolute;
+    top: calc(100% + 0.3rem);
+    border-radius: 5px;
+    left: 0;
+}
+
+.about-me-grid {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+}
+
+
+.container {
+    max-width: 120rem;
+    margin: 4rem auto;
+}
+
+footer .container {
+    margin-bottom: 0;
+}
+
+.section-desc hr {
+    margin: 3rem 0;
+}
+
+.flex-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.flex-contact hr {
+    width: 100%;
+    display: none;
+}
+
+footer { 
+    background-color: var(--primary-grayish-dark-blue);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    padding: 0px 10px;
+}
+
+.grid-portfolio {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+
+.portfolio-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-desc hr{
+    width: 100%
+}
+
+.article-desc strong {
+    color: #5FB4A2;
+    font-weight: bold;
+}
+
+.article-hero-img { 
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.article-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.article-desc hr {
+    width: 100%;
+}
+
+.h2-rem {
+    margin-bottom: 3rem;
+}
+
+.static-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav_inter_article {
+    text-decoration: none;
+    color: black;
+    border-top: 1px #DDDCDE solid;
+    border-bottom: 1px #DDDCDE solid;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.article_nav_container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav_inter_article:last-child{
+    text-align: right;
+    border-left: 1px #DDDCDE solid;
+}
+
+.fleche_nav_article, .fleche_nav_article_reverse {
+    width: fit-content;
+}
+
+.fleche_nav_article{
+    transform: rotateZ(90deg);
+}
+
+.fleche_nav_article_reverse{
+    transform: rotateZ(-90deg);
+    display: inline-block;
+    align-self: end;
+
+}
+
+.fleche_nav_article img, .fleche_nav_article_reverse img {
+    max-width: 1.8rem;
+    padding: 1rem 0;
+}
+
+.nav-inter-article-text  {
+    padding: 1rem 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.social-group {
+    display: flex;
+    gap: 0.7rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#contact-form input, textarea {
+    margin-bottom: 2rem;
+    border: none;
+    background-color: #E6E6E7;
+    color: #9E9EA3;
+    padding-left: 1.5rem;
+    padding-bottom: 1.9rem;
+    padding-top: 1.9rem;
+}
+
+#contact-form #submit-button {
+    width: fit-content;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.6rem 3.5rem;
+    background-color: var(--primary-grayish-dark-blue);
+}
+
+.gap1 {
+    gap: 1rem;
+}
+
+.contact-inception {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

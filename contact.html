@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang=fr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medias.css">
+    <title>Contact me</title>
+</head>
+<body>
+
+    <header>
+            <div class="container" >
+                <a href="#"><img src="img/logo.svg" alt="Logo" class="logo-header"></a>
+                <button class="burger-menu"  id="burger-menu"></button>
+                <nav class="header-nav" id="header-nav">
+                    <ul>
+                        <a href="index.html"><li>home</li></a>
+                        <a href="portfolio.html"><li>portfolio</li></a>
+                        <a href="#"><li>contact me</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+        <section class="container section-desc gap1">
+            <hr>
+                <div class="contact-dis-flex">
+                    <h2>Get in Touch</h2>
+                    <div class="contact-inception">
+                        <p>I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
+                        <div class="social-group">
+                            <a href=""><img src="img/github-logo.svg" alt=""></a>
+                            <a href=""><img src="img/twitter-logo.svg" alt=""></a>
+                            <a href=""><img src="img/linkedin-logo.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+        </section>
+        <section class="container contact-grid-xl">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Appleseed">
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com.">
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="How can I help?" style="height:200px" ></textarea>
+                
+                    <input type="submit" id="submit-button" value="Send message">
+        </section>
+    </main>
+    <script src='script.js'> </script>
+</body>
+</html>
